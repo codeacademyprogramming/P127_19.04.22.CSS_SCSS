@@ -1,0 +1,50 @@
+@import "./variables.scss";
+
+@mixin horizontalCenter {
+  @include flex;
+
+  justify-content: center;
+}
+
+@mixin verticalCenter {
+  @include flex;
+
+  align-items: center;
+}
+
+@mixin center {
+  @include horizontalCenter;
+  @include verticalCenter;
+}
+
+@mixin padding($top: 0, $right: 0, $bottom: 0, $left: 0) {
+  @if $top {
+    padding-top: $top * $base;
+  }
+
+  @if $right {
+    padding-right: $right * $base;
+  }
+
+  @if $bottom {
+    padding-bottom: $bottom * $base;
+  }
+
+  @if $left {
+    padding-left: $left * $base;
+  }
+}
+
+@mixin flex($justify, $align) {
+  display: flex;
+
+  @if ($justify == "center") {
+    justify-content: center;
+  } @else if ($justify == "end") {
+    justify-content: flex-end;
+  } @else {
+    justify-content: flex-start;
+  }
+
+  align-items: $align;
+}

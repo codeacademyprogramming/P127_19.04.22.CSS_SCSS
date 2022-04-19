@@ -1,0 +1,15 @@
+@import "./lists.scss";
+
+@function calculateWidth() {
+  $sum: 150px;
+
+  // @error "";
+
+  // @warn "Do not mess with me!!!";
+
+  @return $sum;
+}
+
+@function calculateSize($size) {
+  @return $size * 10px;
+}

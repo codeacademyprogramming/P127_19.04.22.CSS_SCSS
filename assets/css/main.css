@@ -1,0 +1,51 @@
+body {
+  background: aqua;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#container {
+  background-color: royalblue;
+  height: 400px;
+  width: 150px;
+  padding-top: 0px;
+  padding-right: 32px;
+  padding-bottom: 0px;
+  padding-left: 0px; }
+
+.col-1 {
+  width: 10px; }
+
+.col-2 {
+  width: 20px; }
+
+.col-3 {
+  width: 30px; }
+
+.col-4 {
+  width: 40px; }
+
+.col-5 {
+  width: 50px; }
+
+.col-6 {
+  width: 60px; }
+
+.col-7 {
+  width: 70px; }
+
+.col-8 {
+  width: 80px; }
+
+.col-9 {
+  width: 90px; }
+
+.col-10 {
+  width: 100px; }
+
+.col-11 {
+  width: 110px; }
+
+.col-12 {
+  width: 120px; }

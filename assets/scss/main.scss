@@ -1,0 +1,31 @@
+@import "./utilities/variables.scss";
+@import "./utilities/mixins.scss";
+@import "./utilities/functions.scss";
+
+body {
+  background: $primaryColor;
+  height: 100vh;
+
+  @include flex(center, center);
+}
+
+#container {
+  background-color: $secondaryColor;
+  height: 400px;
+  width: calculateWidth();
+
+  @include padding(0, 4);
+}
+
+// @each $size in $sizes {
+//   .col-#{$size} {
+//     width: calculateSize($size);
+//   }
+// }
+
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: calculateSize($i);
+  }
+}
